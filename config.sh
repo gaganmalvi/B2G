@@ -92,6 +92,12 @@ case "$1" in
 	echo BINSUFFIX=64 >> .tmp-config &&
 	repo_sync $1
 	;;
+"2e")
+	echo PRODUCT_NAME=b2g_2e >> .tmp-config &&
+	echo TARGET_NAME=2e >> .tmp-config &&
+	echo BINSUFFIX=64 >> .tmp-config &&
+	repo_sync $1
+	;;
 "onyx")
 	echo PRODUCT_NAME=b2g_onyx  >> .tmp-config &&
 	echo TARGET_NAME=onyx  >> .tmp-config &&
